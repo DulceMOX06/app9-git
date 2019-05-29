@@ -40,7 +40,7 @@ function initAudio(element){
 	});
 	
 	//Pause Button
-	$('#play').click(function (){
+	$('#pause').click(function (){
 		audio.pause ();
 		$('#pause').hide();
 		$('#play').show();
@@ -61,7 +61,7 @@ function initAudio(element){
 		initAudio($(this));
 		$('#play').hide();
 		$('#pause').show();
-		$('#duration').faldeln();
+		$('#duration').faldeln(400);
 		audio.play();
 		showDuration();
 	});
@@ -76,7 +76,7 @@ function initAudio(element){
 		$(audio).bind('timeupdate', function(){
 			//Get hours and minutes
 			var s = parseInt(audio.currentTime %60);
-			var m = parseInt((audio.currentTime %60)%60);
+			var m = parseInt((audio.currentTime /60)%60);
 			//Add 0 if seconds less than 10
 			if(s < 10){
 				s ='0' + s;
