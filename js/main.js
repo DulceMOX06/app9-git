@@ -35,7 +35,7 @@ function initAudio(element){
 		audio.play ();
 		$('#play').hide();
 		$('#pause').show();
-		$('#duration').fadeln(400);
+		$('#duration').fadeIn(400);
 		showDuration();
 	});
 	
@@ -61,7 +61,7 @@ function initAudio(element){
 		initAudio($(this));
 		$('#play').hide();
 		$('#pause').show();
-		$('#duration').faldeln(400);
+		$('#duration').fadeIn(400);
 		audio.play();
 		showDuration();
 	});
