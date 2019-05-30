@@ -107,7 +107,7 @@ button#stop{
 	background:#F96;
 }
 
-#progress Bar{
+#progressBar{
 	width:80%;
 	margin-left:2%;
 	margin-bottom:20px;
@@ -117,8 +117,8 @@ button#stop{
 	float:left;
 }
 
-#progress{
-	background:: url(../images/progress.png) no-repeat;
+#progress {
+	background:url(../images/progress.png) no-repeat;
 	height:10px;
 	display:inline-block;
 }
